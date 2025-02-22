@@ -91,6 +91,9 @@ export class C3DMarker {
     get brightness(): number {
         return Memory.ReadFloat(this.address + 0x70, false);
     }
-    
+
+    set brightness(value: number) {
+        Memory.WriteFloat(this.address + 0x70, value, false);
+    }
     
 }

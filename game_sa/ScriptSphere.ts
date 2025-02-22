@@ -1,5 +1,31 @@
 import { ScriptSpheres } from "./ScriptSpheres";
 
+/**
+ * struct tScriptSphere {
+    bool    m_bUsed; // 0x00
+    char    m_f1; // 0x01
+    int16   m_nUniqueId; // 0x02
+    uint32  m_nId; // 0x04
+    CVector m_vCoords; // 0x08
+    float   m_fRadius; // 0x14
+
+    tScriptSphere() { // 0x469060
+        m_vCoords   = CVector();
+        m_bUsed     = false;
+        m_nUniqueId = 1;
+        m_nId       = 0;
+        m_fRadius   = 0.0f;
+    }
+
+    //! Get script thing ID
+    auto GetId()    const { return m_nUniqueId; }
+
+    //! If `*this` is currently in use
+    auto IsActive() const { return m_bUsed; }
+    
+    };
+    VALIDATE_SIZE(tScriptSphere, 0x18);
+ */
 export class ScriptSphere {
     private address: number;
 

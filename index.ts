@@ -20,12 +20,8 @@ function logMarkers() {
     log(`  Size: ${marker.size.toFixed(2)} (std: ${marker.standardSize.toFixed(2)})`);
     log(`  Pulse Period: ${marker.pulsePeriod}`);
     log(`  Rotate Rate: ${marker.rotateRate}`);
-    log(`  Brightness: ${marker.brightness}`);
   }
 }
-
-
-logMarkers()
 
 function logSpheres() {
   for (const sphere of ScriptSpheres) {
